@@ -1,0 +1,70 @@
+.header {
+  
+}
+
+.nav {
+ display: fixed;
+ float: left;
+ /* padding: 10px; */
+ border: 2px solid #000;
+ border-radius: 15px;
+ background-color: grey;
+ -moz-border-radius: 15px;
+ width: 30%
+ /*padding: 30px;*/
+ text-align: center;
+}
+.nav--row {
+    width: 100%; 
+}
+.nav--button {
+ margin: 0 auto;
+ width: 95%; 
+ /* display: block; */
+ padding: 10px;
+ border: 2px solid #000;
+ border-radius: 15px;
+ -moz-border-radius: 15px;
+}
+
+.content {
+  /* margin-left:30%; */
+  width: 60%;
+  display: inline-block;
+  text-align:left;
+}
+
+p {
+  font-size: 8px;
+  font-family: Verdana;
+}
+.title {
+ padding: 1%;
+ border: 2px solid #000;
+ border-radius: 15px;
+ background-color: pink;
+ -moz-border-radius: 15px;
+}
+
+.title-text {
+  font-size: 15px;
+  font-family: Allerta Stencil;
+}
+
+.entry {
+  padding:2px;
+  border:1px solid #FFA11B;
+  background-color: #FFC71B;
+  vertical-align:middle;
+  color:835600;
+  text-align:left;
+}
+
+.entry-text {
+  font-size: 10px;
+  font-family: verdana;
+}
+
+#poll {
+
+}
