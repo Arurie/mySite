@@ -1,28 +1,68 @@
-* {
+.header {
+  
+}
+
+.nav {
+ display: inline;
+ float: left;
+ padding: 10px;
+ border: 2px solid #000;
+ border-radius: 15px;
+ background-color: grey;
+ -moz-border-radius: 15px;
+ width: 30%
+ /*padding: 30px;*/
+ text-align: center;
+}
+
+.nav--button {
+ margin: 0 auto;
+ width: 80%;
+ padding: 10px;
+ border: 2px solid #000;
+ border-radius: 15px;
+ -moz-border-radius: 15px;
+ display: block;
+}
+
+.content {
+  margin-left:30%;
+  width: 60%;
+  display: inline-block;
+  text-align:left;
+}
+
+p {
+  font-size: 8px;
+  font-family: Verdana;
+}
+.title {
+ padding: 1%;
+ border: 2px solid #000;
+ border-radius: 15px;
+ background-color: pink;
+ -moz-border-radius: 15px;
+}
+
+.title-text {
+  font-size: 15px;
+  font-family: Allerta Stencil;
+}
+
+.entry {
+  padding:2px;
+  border:1px solid #FFA11B;
+  background-color: #FFC71B;
+  vertical-align:middle;
+  color:835600;
+  text-align:left;
+}
+
+.entry-text {
+  font-size: 10px;
   font-family: verdana;
 }
 
-body {
-  text-align: center;
-  background: #D7BDE2;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-.circle {
-  background-color: grey;
-  width: 700px;
-  height: 100px;
-  color: white;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 22px;
-}
-input {
-  border: 2;
-  padding: 10px;
-  font-size: 18px;
+#poll {
+
 }
