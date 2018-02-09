@@ -3,9 +3,9 @@
 }
 
 .nav {
- display: inline;
+ display: fixed;
  float: left;
- padding: 10px;
+ /* padding: 10px; */
  border: 2px solid #000;
  border-radius: 15px;
  background-color: grey;
@@ -14,19 +14,21 @@
  /*padding: 30px;*/
  text-align: center;
 }
-
+.nav--row {
+    width: 100%; 
+}
 .nav--button {
  margin: 0 auto;
- width: 80%;
+ width: 95%; 
+ /* display: block; */
  padding: 10px;
  border: 2px solid #000;
  border-radius: 15px;
  -moz-border-radius: 15px;
- display: block;
 }
 
 .content {
-  margin-left:30%;
+  /* margin-left:30%; */
   width: 60%;
   display: inline-block;
   text-align:left;
