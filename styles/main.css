@@ -1,8 +1,8 @@
 .header {
-  
+
 }
 
-.nav {
+.nav1 {
  display: fixed;
  float: left;
  /* padding: 10px; */
@@ -15,16 +15,18 @@
  text-align: center;
 }
 .nav--row {
-    width: 100%; 
+    width: 100%;
 }
 .nav--button {
  margin: 0 auto;
- width: 95%; 
+ width: 95%;
  /* display: block; */
  padding: 10px;
  border: 2px solid #000;
  border-radius: 15px;
  -moz-border-radius: 15px;
+ background-color: white;
+ text-align: center;
 }
 
 .content {
@@ -44,6 +46,14 @@ p {
  border-radius: 15px;
  background-color: pink;
  -moz-border-radius: 15px;
+}
+
+.title-alt {
+  background-color: #FFC71B;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 
 .title-text {
