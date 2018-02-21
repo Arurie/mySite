@@ -1,47 +1,89 @@
 $(document).ready(function(){
-    
-    var writeGameText = function (gameText) {
-        $('#game-text').html(gameText);
-    };
-    
-    writeGameText("Once upon a time....");
-    
-    var user = prompt("You meet him in the alleyway and catch a glint of light no doubt reflecting from either barred fangs or a sadistic smile. Your legs all but crumple beneath you. Frozen in fear, your mind races for a reaction. Grasping onto coherency just long enough to allow your body to move, you realize that you should either: wait, attack, or run. Which do you decide upon?", "Choose wisely. Your life could very well hang in the balance of this choice.").toLowerCase();
 
-    switch(user) {
-        case 'wait':
-            var suave = prompt("You wait silently for him to approach you, pouring over every movement you make out with the limited light source. Suddenly, he's kneeling down in front of you, or at least you think he is, as the twinkling light of his teeth are now even with your line of sight. He exhales and you suddenly feel warmed by the close proximity. 'Well hello, little rat. You didn't run from me. Why is that?' His last words were coated in amusement. 'Don't you know we eat your kind?'","Your reply.").toLowerCase();
-            if (suave.includes("eat me")){
-                console.log("Congratulations! You got the super secret GAY END");
-            }
-            else {
-                console.log("You were too overcome by his suavacity. Up your game and come back later.");
-            }
-            break;
-        case 'attack':
-            var damage = prompt("You push forward, trying to take out his legs as he approaches. Do you cling there?").toLowerCase();
-            var bite = prompt("Do you then bite down?").toLowerCase();
-            if (damage && bite== "yes") {
-                console.log("You managed to hold on and draw blood from a now tender leg muscle. He does his best to kick you away, yowling as though his life depended on it. Congratulations, you just attacked someone who had never done you any harm and was only guilty of being different from you. RACIST END");
-            }
-            else{
-                console.log("He chuckles at your attempt and then proceeds to help you up. 'You alright there? It's okay... I'm not going to harm you. What's your name? Mine is...' You made a friend! I mean, eventually, right? There's a lot of development that no doubt takes place between these two, but this sure kicks it off! UNFORSEEN FRIENDSHIP END aka MAYBE (one day) SURPRISE BUTT SEX END");
-            }
-            break;
-        case 'run':
-            var kickoff = prompt("You first have to get up. It's crucial that you do so without any problems. In your hazy state, do you manage?").toLowerCase();
-            if (kickoff=="no") {
-                alert("Although you have difficulties, you still manage to reach your feet, uneasily as they may be.");
-            }
-            var speed = prompt("You spring as hard and far as you possibly can, but none of that matters until your speed is any sort of decent. Let's face it: rats have short, stubby legs. Do you manage any distance?").toLowerCase();
-            if (kickoff||speed=="yes") {
-                console.log("You hear a voice call out from behind you but it sounds too kind to be coming from your would-be attacker. You shrug it off and assure yourself that it couldn't possibly be the same person. You run and never turn back, thus closing yourself off from any potential character arcs or growth. IGNORANT END");
-            }
-            else {
-                console.log("You failed both attempts and just fall to your feet once again. It's then that you feel arms suddenly  engulf your shoulders, pulling you in close. 'Come now, isn't it time that you stopped trying to escape the loop? Even if you get away now, it all resets in the end, you know? Just accept it, like all of us have. It's so much easier once you do...' With each of his words, you feel your mind break apart more and more until the last shred of your sanity shatters, leaving your body an empty husk and a perfect puppet for 'her'. ENDLESS LOOP END");
-            }
-            break;
-        default:
-            console.log("It seems your mind was unable to form the coherency with which to reasonably react. With what little that runs through your mind going black, you reach out for him. What your intention is, not even you yourself know, but whatever it was or could have been will forever be lost to you now. Your vision registers only blackness, until it can no longer recognize even that. BAD END");
+
+  //game content, remember, first thing to appear is at the bottom of this section
+  var b1p2 = {
+    text: "<br><br>Thousands of snapshot images flood my closed eyes, and merge at once. <br>It burns. Everything is suddenly so bright, and it burns. <br>-My- mind throbs. I have a mind. Perhaps there is more. <br>I tentatively form a thought: a command, to be more specific.",
+    choice: b1c1,
+  };
+  var b1p3 = "this is b1p3";
+  var b2p1 = {
+    text: "<br><br>-We- are… -I- can't possibly be. There are too many voices: too many lives trying to paint -my- personality for that to be right. <br>No… -we- exist here. Together. Using this knowledge, -we- can-- <br><br>All thoughts and voices cease. All, but one deafening echo. <br>'Not yet,' she, he, it? whispers. The garbled voice would frighten -us-, but they sound so much more afraid. Some of us want to help them, while others feel hatred, and the rest are indifferent. It doesn't matter, because just as quickly as this identity formed, the cloying darkness is taking us back. <br>Wait for us… <br><br>END- NOT YET.",
+    choice: null,
+  };
+
+  var b1c1 = {
+    o1: {
+      text: "i am",
+      next: b1p2,
+    },
+    o2: {
+      text: "we are",
+      next: b2p1,
+    },
+  };
+
+  var b1p1 = {
+    text: "I… we… What…? <br>Our--my eyes are swimming. There is a deep, inky blackness surrounding me; us. Where does it end? Maybe 'it' doesn't: maybe this is who we are. And yet I feel a consciousness fighting for control, but the voices are many, their volumes unequal.Focus… -I- urge to -myself-. Who am… Who are…?",
+    choice: b1c1,
+  };
+
+  //game code
+
+  //alert('load');
+
+  var gameState = b1p1;
+  var currentDisplay = gameState.text;
+
+  //typewriter animation
+  var textLocation = 0;
+  var speed = 30;
+  function typeWriter() {
+    if (textLocation < currentDisplay.length) {
+      document.getElementById("game-text").innerHTML += currentDisplay.charAt(textLocation);
+      textLocation++;
+      setTimeout(typeWriter, speed);
     }
+  }
+
+  var writeGameText = function (gameText) {
+    $('#game-text').html(gameText);
+    //typeWriter();
+    $('#game-text').animate({
+       scrollTop: ($("#game-text")[0].scrollHeight)},
+       1400,
+       "linear"
+    );
+    //$("#game-text").scrollTop($("#game-text")[0].scrollHeight);
+    //alert($('#game-text').scrollHeight);
+  }
+
+
+  writeGameText(currentDisplay);
+/*
+  $.each(gameState.choice, function(key, value) {
+    alert(value.text);
+  });
+*/
+
+  var submitChoice = function () {
+    var gameChoice = $("#game-input").val().toLowerCase();
+    var nextState = gameState;
+    for (var key in gameState.choice) {
+      var o = gameState.choice[key];
+      if (gameChoice == o.text) {
+        alert('you chose: ' + o.text);
+        nextState = o.next;
+      };
+    };
+    gameState = nextState;
+    //refresh text
+    currentDisplay = currentDisplay+gameState.text;
+    writeGameText(currentDisplay);
+  };
+
+  $("#game-form").submit(function(e){
+    e.preventDefault();
+    submitChoice();
+  });
 });
