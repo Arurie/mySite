@@ -1,80 +1,57 @@
-.header {
-
+body {
+	/*background-color: #7f8b94;
+	background-color: #7f8873;*/
+	background-image: url("../images/cutehead.jpg");
+	background-position: left;
+	background-attachment: fixed;
+	background-repeat: repeat-y-x
 }
 
-.nav1 {
- display: fixed;
- float: left;
- /* padding: 10px; */
- border: 2px solid #000;
- border-radius: 15px;
- background-color: grey;
- -moz-border-radius: 15px;
- width: 30%
- /*padding: 30px;*/
- text-align: center;
-}
-.nav--row {
-    width: 100%;
-}
-.nav--button {
- margin: 0 auto;
- width: 95%;
- /* display: block; */
- padding: 10px;
- border: 2px solid #000;
- border-radius: 15px;
- -moz-border-radius: 15px;
- background-color: white;
- text-align: center;
+@font-face {
+		font-family: "CaviarDreams";
+		src: url("../fonts/CaviarDreams.ttf");
 }
 
-.content {
-  /* margin-left:30%; */
-  width: 60%;
-  display: inline-block;
-  text-align:left;
+.m-entry {
+		color: #ffffff;
 }
 
-p {
-  font-size: 8px;
-  font-family: Verdana;
-}
-.title {
- padding: 1%;
- border: 2px solid #000;
- border-radius: 15px;
- background-color: pink;
- -moz-border-radius: 15px;
+.m-entry .m-h {
+	background-color: #705c66;
+	padding: 2px 7px;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	font-family: "CaviarDreams";
+  font-size: 25px;
 }
 
-.title-alt {
-  background-color: #FFC71B;
-  padding: 1%;
-  border: 2px solid #000;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
+.m-entry .m-p {
+	font-size: 14px;
+	background-color: #363838;
+	padding: 10px 10px;
+	border: 2px solid #fff;
+	border-radius: 15px;
+  font-family: "Muli";
 }
 
-.title-text {
-  font-size: 15px;
-  font-family: Allerta Stencil;
+.m-sidebar {
+  background-color: #C3B7B7;
+	font-family: "CaviarDreams";
+	font-weight: bold;
 }
 
-.entry {
-  padding:2px;
-  border:1px solid #FFA11B;
-  background-color: #FFC71B;
-  vertical-align:middle;
-  color:835600;
-  text-align:left;
+.m-sidebar a {
+	width: 80%;
 }
 
-.entry-text {
-  font-size: 10px;
-  font-family: verdana;
+.m-topbar {
+  background-color: #C3B7B7;
 }
 
-#poll {
+.card {
+	margin: 10px 0px;
+}
 
+.card-body {
+	color: #000000;
 }
