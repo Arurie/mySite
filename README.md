@@ -1,4 +1,2 @@
 # mySite
-wipBasic
-
-I just want a small portfolio with future plans and a fun game.
+A "basic" website I learned a lot from playing around with. I hope you enjoy it!
