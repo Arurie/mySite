@@ -1,8 +1,8 @@
 body {
 	/*background-color: #7f8b94;
 	background-color: #7f8873;*/
-	background-image: url("../images/cutehead.jpg");
-	background-position: left;
+	background-image: url("../images/stars2.jpg");
+	background-position: left top;
 	background-attachment: fixed;
 	background-repeat: repeat-y-x
 }
@@ -12,32 +12,53 @@ body {
 		src: url("../fonts/CaviarDreams.ttf");
 }
 
+.m-banner {
+	position:fixed;
+	z-index: 1;
+	width: 100%;
+	background-color: #000;
+}
+.m-banner-img {
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .m-entry {
-		color: #ffffff;
+		color: #C3C3E5;
 }
 
 .m-entry .m-h {
 	background-color: #705c66;
+	color: #fff;
 	padding: 2px 7px;
-	border: 2px solid #fff;
 	border-radius: 15px;
 	font-family: "CaviarDreams";
   font-size: 25px;
+	margin-bottom: 3px;
 }
 
 .m-entry .m-p {
 	font-size: 14px;
 	background-color: #363838;
 	padding: 10px 10px;
-	border: 2px solid #fff;
 	border-radius: 15px;
   font-family: "Muli";
 }
 
+.m-fixed-sidebar {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
 .m-sidebar {
-  background-color: #C3B7B7;
+  background-color: #705c66;
 	font-family: "CaviarDreams";
 	font-weight: bold;
+	position: sticky;
+	height: 100vh;
 }
 
 .m-sidebar a {
@@ -46,6 +67,7 @@ body {
 
 .m-topbar {
   background-color: #C3B7B7;
+	padding: 3px;
 }
 
 .card {
@@ -53,5 +75,25 @@ body {
 }
 
 .card-body {
-	color: #000000;
+	background-color: #C3C3E5;
+	color: #0a0e18;
+	text-align: center;
+}
+
+#periwinkle {
+	color: #0a0e18;
+}
+
+#grey {
+	color: #666;
+}
+
+#game-text {
+	background-color: #C3C3E5;
+	height: 70vh;
+	overflow-y: scroll;
+}
+
+.buffer {
+	
 }
