@@ -16,34 +16,33 @@
   <script src="scripts/game.js"></script>
 </head>
 <body>
-	<div class="m-topbar fixed-top text-center d-block d-sm-none">
-		<a href="game.html" class="btn btn-secondary">Play Game</a>
-		<a href="index.html" class="btn btn-secondary">Home</a>
-		<a href="contact.html" class="btn btn-secondary">About</a>
-	</div>
 	<div class="d-block d-sm-none">
 		<br>
 	</div>
 
     <div class="container">
         <div class="row">
-        <br>
+        	<div class ="buffer">
+					</div>
         </div>
       <div class="row">
-        <div class="col-sm" >
-            <div id="game-text" class="alert alert-secondary" role="alert">
+        <div class="col" >
+            <div id="game-text" class="alert" role="alert">
 
             </div>
 
             <form id="game-form">
 							<div class="form-group">
 						    <label for="game-input"></label>
-						    <input type="text" class="form-control" id="game-input" aria-describedby="game-input-help" placeholder="Enter choice" autofocus>
-						    <small id="game-input-help" class="form-text text-muted">Type your choices here</small>
+						    <input type="text" class="form-control" id="game-input" aria-describedby="game-input-help" placeholder="Press enter to continue" autofocus>
 						  </div>
 						</form>
         </div>
       </div>
+				<div class = "text-right">
+					<a href="index.html" class="btn btn-dark">Home</a>
+				</div>
+				<br>
     </div>
 </body>
 </html>

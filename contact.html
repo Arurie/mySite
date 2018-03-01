@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!--To do:
+		Download Bootstrap and host it locally
+		Make background image
+		Make header image
+		Make icon image
+		Host it on GitHub
+		Add music (if there is time)
+		Add a home button to the game section
+		Fill in 'about' section with images and text
+		Add more of the story to game
+		Put the story into chunks so it doesn't come all at once
+		Add 'enter to continue story' prompt
+	-->
+
+
 	<title>The Mouse with a Marble Nose</title>
 	<meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,48 +28,68 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/index.js"></script>
 </head>
 
 <body>
+
 	<!--this is the top bar-->
 	<div class="m-topbar fixed-top text-center d-block d-sm-none">
 		<a href="game.html" class="btn btn-secondary">Play Game</a>
 		<a href="index.html" class="btn btn-secondary">Home</a>
-		<a href="contact.html" class="btn btn-secondary">About</a>
+		<a href="contact.html" class="btn btn-dark">About</a>
 	</div>
 	<div class="d-block d-sm-none">
 		<br>
 		<br>
 	</div>
 
-	<div class="container text-center">
-	  <div class="row">
-			<!--this is the sidebar-->
-			<div class="col-3 m-sidebar d-none d-sm-block">
-				<div class="">
-					<img src="images/mousebutt.jpg" class="rounded-circle img-fluid" alt="Responsive image">
+	<!--make the banner 1920 x 1080-->
+	<!--<div class="m-banner">
+		<img src="images/cat_mouse.png" class=" m-banner-img" alt="Responsive image">
+	</div>-->
+	<div class="m-fixed-sidebar">
+		<div class="container text-center">
+		  <div class="row">
+				<!--this is the sidebar-->
+				<div class="col-3 m-sidebar d-none d-sm-block ">
 					<div class="">
+						<!--<!<div class="buffer">
+						</div>-->
 						<div class="row">
 							<br>
 						</div>
-						<a href="game.html" class="btn btn-secondary">Play!</a>
-						<div class="row">
-							<br>
-						</div>
-						<a href="index.html" class="btn btn-secondary">Home</a>
-						<div class="row">
-							<br>
-						</div>
-						<a href="contact.html" class="btn btn-secondary">About</a>
-						<div class="row">
-							<br>
+						<img src="images/mousebutt.jpg" class="rounded-circle img-fluid" alt="Responsive image">
+						<div class="">
+							<div class="row">
+								<br>
+							</div>
+							<a href="game.html" class="btn btn-secondary">Play!</a>
+							<div class="row">
+								<br>
+							</div>
+							<a href="index.html" class="btn btn-secondary">Home</a>
+							<div class="row">
+								<br>
+							</div>
+							<a href="contact.html" class="btn btn-dark">About</a>
+							<div class="row">
+								<br>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
 
-		<!--this is the right column-->
-			<div class="col-12 col-sm-9 text-left">
+	<div class="container text-center" id="page">
+	  <div class="row">
+			<!--this is the right column-->
+			<div class="col-12 col-sm-9 offset-sm-3 text-left">
+				<div class="row">
+					<br>
+				</div>
 				<div class="m-entry">
 					<div class="m-h">A Bit about the Creator
 					</div>
