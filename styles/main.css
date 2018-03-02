@@ -12,6 +12,30 @@ body {
 		src: url("../fonts/CaviarDreams.ttf");
 }
 
+.m-entry a {
+	font-weight: bold;
+	color: #FFDF00;
+	text-decoration: none;
+}
+
+.m-entry a:active {
+	text-decoration: none;
+}
+
+.m-entry a:visited {
+	text-decoration: none;
+	color: #F0E68C;
+}
+
+.m-entry a:hover {
+	text-decoration: none;
+	color: #C3B7B7;
+}
+
+.m-btn {
+	font-family: "CaviarDreams";
+}
+
 .m-banner {
 	position:fixed;
 	z-index: 1;
@@ -47,8 +71,13 @@ body {
   font-family: "Muli";
 }
 
+.m-imp-txt {
+	font-weight: bold;
+	color: #C3B7B7;
+}
+
 .m-fixed-sidebar {
-	width: 100%;
+	width: auto;
 	position: fixed;
 	z-index: 1;
 }
@@ -57,7 +86,6 @@ body {
   background-color: #705c66;
 	font-family: "CaviarDreams";
 	font-weight: bold;
-	position: sticky;
 	height: 100vh;
 }
 
@@ -77,7 +105,6 @@ body {
 .card-body {
 	background-color: #C3C3E5;
 	color: #0a0e18;
-	text-align: center;
 }
 
 #periwinkle {
@@ -92,8 +119,9 @@ body {
 	background-color: #C3C3E5;
 	height: 70vh;
 	overflow-y: scroll;
+	font-family: "Helvetica";
 }
 
 .buffer {
-	
+
 }
