@@ -1,7 +1,7 @@
 body {
 	/*background-color: #7f8b94;
 	background-color: #7f8873;*/
-	background-image: url("../images/stars2.jpg");
+	background-image: url("https://i.imgur.com/5okDn8C.jpg");
 	background-position: left top;
 	background-attachment: fixed;
 	background-repeat: repeat-y-x;
@@ -39,7 +39,7 @@ body {
 
 .m-home {
 	border-radius: 100%;
-	margin: 3px; 
+	margin: 3px;
 }
 
 .m-banner {
