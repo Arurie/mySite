@@ -37,6 +37,11 @@ body {
 	font-family: "CaviarDreams";
 }
 
+.m-home {
+	border-radius: 100%;
+	margin: 3px; 
+}
+
 .m-banner {
 	position:fixed;
 	z-index: 1;
