@@ -4,7 +4,8 @@ body {
 	background-image: url("../images/stars2.jpg");
 	background-position: left top;
 	background-attachment: fixed;
-	background-repeat: repeat-y-x
+	background-repeat: repeat-y-x;
+	background-color: #0a0e18;
 }
 
 @font-face {
@@ -50,7 +51,8 @@ body {
 }
 
 .m-entry {
-		color: #C3C3E5;
+	margin-top: 1em;
+	color: #C3C3E5;
 }
 
 .m-entry .m-h {
@@ -63,17 +65,40 @@ body {
 	margin-bottom: 3px;
 }
 
+.m-p h5 {
+	font-family: "CaviarDreams";
+	color: #fff;
+}
+
 .m-entry .m-p {
 	font-size: 14px;
 	background-color: #363838;
 	padding: 10px 10px;
 	border-radius: 15px;
   font-family: "Muli";
+	margin-bottom: 7px;
 }
 
 .m-imp-txt {
 	font-weight: bold;
 	color: #C3B7B7;
+}
+
+.m-icon {
+	height: 2em;
+	width: 2em;
+	margin: 5px;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.m-c-icon {
+	height: 2em;
+	width: 2em;
+	float: left;
+	margin: 3px;
 }
 
 .m-fixed {
@@ -93,7 +118,7 @@ body {
 }
 
 .m-topbar {
-  background-color: #C3B7B7;
+  background-color: #C3C3E5;
 	padding: 3px;
 }
 
@@ -121,6 +146,7 @@ body {
 	font-family: "Helvetica";
 }
 
-.buffer {
-
-}
+/*.m-c {
+	height: 20em;
+	overflow-y: auto;
+}*/
