@@ -1,6 +1,4 @@
 body {
-	/*background-color: #7f8b94;
-	background-color: #7f8873;*/
 	background-image: url("https://i.imgur.com/5okDn8C.jpg");
 	background-position: left top;
 	background-attachment: fixed;
@@ -39,20 +37,7 @@ body {
 
 .m-home {
 	border-radius: 100%;
-	margin: 3px;
-}
-
-.m-banner {
-	position:fixed;
-	z-index: 1;
-	width: 100%;
-	background-color: #000;
-}
-.m-banner-img {
-	width: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 5px;
 }
 
 .m-entry {
@@ -93,10 +78,6 @@ body {
 	height: 2em;
 	width: 2em;
 	margin: 5px;
-}
-
-.clear-both {
-	clear: both;
 }
 
 .m-c-icon {
@@ -150,8 +131,3 @@ body {
 	overflow-y: scroll;
 	font-family: "Helvetica";
 }
-
-/*.m-c {
-	height: 20em;
-	overflow-y: auto;
-}*/
