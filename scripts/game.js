@@ -381,7 +381,7 @@ var b3p1 = {
         };
       };
       if (nextState == gameState) {
-        newText = "<br><br>What does that even mean?<br>No, I need to -focus-. I can -do- this.<br>I'll try again.";
+        newText = "<br><br>What does that even mean?<br>No, I need to -focus-. I can -do- this.<br>I'll try again.<br><br>";
       }
       gameState = nextState;
     }
