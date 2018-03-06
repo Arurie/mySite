@@ -170,14 +170,19 @@ var bf1a1 = {
   next: bf1a2,
 }
 
-var bf1b2 = {
+var bf1b3 = {
   text: "I send a command down through my spine, feeling it tingle along the way, ending in my stubby limbs. I try to replicate the motion from earlier, wiggling my fingers. ",
   next: b1p20,
 }
 
+var bf1b2 = {
+  text: "Calling back the connections I made earlier, back there or then, I tentatively try to feel. <br>Really, between thinking this much, when is there time to focus on the physical? But perhaps now I have thought too much, and the important thing was now to experience.",
+  next: bf1b3,
+}
+
 var bf1b1 = {
-  text: "Speaking I wasn’t so sure about. I haven’t even attempted such a thing, yet, and he seems like he won’t be capable of waiting. I best show him that I’m at least trying. <br><br>Calling back the connections I made earlier, back there or then, I tentatively try to feel. <br>Really, between thinking this much, when is there time to focus on the physical? But perhaps now I have thought too much, and the important thing was now to experience.",
-  next: bf1b2
+  text: "Speaking I wasn’t so sure about. I haven’t even attempted such a thing, yet, and he seems like he won’t be capable of waiting. I best show him that I’m at least trying.",
+  next: bf1b2,
 }
 
 var b1p19 = {
@@ -398,14 +403,3 @@ var b3p1 = {
   });
 
 });
-
-//typewriter animation
-var textLocation = 0;
-var speed = 30;
-function typeWriter() {
-  if (textLocation < currentDisplay.length) {
-    document.getElementById("game-text").innerHTML += currentDisplay.charAt(textLocation);
-    textLocation++;
-    setTimeout(typeWriter, speed);
-  }
-}
