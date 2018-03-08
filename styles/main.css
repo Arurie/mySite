@@ -125,6 +125,10 @@ body {
 	color: #666;
 }
 
+.game-choice {
+	color: #996515;
+}
+
 #game-text {
 	background-color: #C3C3E5;
 	height: 70vh;
