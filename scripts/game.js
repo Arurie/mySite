@@ -2,13 +2,99 @@ $(document).ready(function(){
 
 
   //game content, remember, first thing to appear is at the bottom of this section
-  var end = {
-    text: "",
-  }
+var end = {
+  text: "",
+}
+
+var b1p60 = {
+  text: ".....<br><br>TO BE CONTINUED",
+  next: false,
+}
+
+var b1p59 = {
+  text: "....",
+  next: b1p60,
+}
+
+var b1p58 = {
+  text: "...",
+  next: b1p59,
+}
+
+var b1p57 = {
+  text: "Yes, this scenery is all I can focus on. Whether I like it or not.",
+  next: b1p58,
+}
+
+var b1p56 = {
+  text: "‘Alright, alright,’ he chuckled. ‘Sounding pretty good, though.’",
+  next: b1p57,
+}
+
+var b1p55 = {
+  text: "‘No!’ I cry out. Oops, I meant to fake composure.",
+  next: b1p56,
+}
+
+
+var b1p54 = {
+  text: "My stomach turns at the height. Something about looking down makes you aware just how <I>up</I> you are.",
+  next: b1p55,
+}
+
+var b1p53 = {
+  text: "‘Hey,’ he calls to me all too calmly for the situation. ‘Wanna practice talking?’",
+  next: b1p54,
+}
+
+var b1p52 = {
+  text: "We’re descending again, so my head is being eased—roughly— forward.",
+  next: b1p53,
+}
+
+var b1p51 = {
+  text: "But then I see the stars. Oh, the stars! Twinkling, shimmering, their deep, saturated hues eased the tension caused by the sky. Some were small; so far away. Others seemed almost like diamonds in their shape. I long to touch one. Maybe if I reach my arm out just a bit…",
+  next: b1p52,
+}
+
+var b1p50 = {
+  text: "It’s a vat of dark, desaturated blue. Just a hint of color. There’s something off-putting about that. It feels like I could fall right into it.",
+  next: b1p51,
+}
+
+var b1p49 = {
+  text: "A sudden burst of air hits my face, and I feel as though I must hold onto my own. The kickback forces my head back, and I see the sky.",
+  next: b1p50,
+}
+
+var b1p48 = {
+  text: "I hadn’t had much time to focus on my—our surroundings, but now it’s all I can focus on.<br><br>He approached another end of a decrepit rooftop, readying himself to spring again.",
+  next: b1p49,
+}
+
+var b1p47 = {
+  text: "My eyes were so wide, I thought they would fall out of their sockets.",
+  next: b1p48,
+}
+
+var b1p46 = {
+  text: ".....",
+  next: b1p47,
+}
+
+var b1p45 = {
+  text: "....",
+  next: b1p46,
+}
+
+var b1p44 = {
+  text: "...",
+  next: b1p45,
+}
 
 var b1p43 = {
-  text: "And then, we were off.<br><br>GOOD(?) END",
-  next: end,
+  text: "And then, we were off.",
+  next: b1p44,
 }
 
 var b1p42 = {
@@ -16,13 +102,305 @@ var b1p42 = {
   next: b1p43,
 }
 
-  var b1p41 = {
-    text: "I don't know if I should trust him.<br><br>But, regardless of what I feel, he’s all I have right now.",
-    next: b1p42,
-  }
+var b1p41 = {
+  text: "I don't know if I should trust him.<br><br>But, regardless of what I feel, he’s all I have right now.",
+  next: b1p42,
+}
+
+var b4p42 = {
+  text: "Anyone... anyone...<br><br>TO BE CONTINUED",
+  next: false,
+}
+
+var b4p41 = {
+  text: "The cold from the worn-down building at my back creeps down my back, and I want to scream.",
+  next: b4p42,
+}
+
+var b4p40 = {
+  text: "Am I really meant to struggle and stumble in the dark, for absolutely no goal?",
+  next: b4p41,
+}
+
+var b4p39 = {
+  text: "What I perceive as my heart, sinks. What if there is no rhyme or reason to this existence?",
+  next: b4p40,
+}
+
+var b4p38 = {
+  text: "Do I have a purpose in being here, something I was made to do? ",
+  next: b4p39,
+}
+
+var b4p37 = {
+  text: "Who am I, if anyone? Or better yet, what...? ",
+  next: b4p38,
+}
+
+var b4p36 = {
+  text: "I close my eyes. Just how much longer do I think I can run away from things?",
+  next: b4p37,
+}
+
+var b4p35 = {
+  text: "The materials feel and look sturdy, but the rooftops look old and rusty. No chance to test their sturdiness, and I hope that ‘opportunity’ never comes.",
+  next: b4p36,
+}
+
+var b4p34 = {
+  text: "I suppose that’s the city center, and it expanded out here.",
+  next: b4p35,
+}
+
+
+var b4p33 = {
+  text: "The buildings in the immediate vicinity are primarily all one floor, with a few being two. I catch glimpses of a faraway skyline, reaching untold heights, but this area is relatively flat in comparison.",
+  next: b4p34,
+}
+
+var b4p32 = {
+  text: "I take a seat against a nearby wall, the bricks cooling my back, and examine the architecture.",
+  next: b4p33,
+}
+
+var b4p31 = {
+  text: "Exhaling in defeat, I wonder what my face looks like.",
+  next: b4p32,
+}
+
+var b4p30 = {
+  text: "Would clothes work for me? I am not slender and tall; regal and lithe. I’m just… this.",
+  next: b4p31,
+}
+
+var b4p29 = {
+  text: "I stop walking, my feet too sore to keep moving. I look down at my body.<br><br>I’ve realized that my body is short and… stubby would be the most fitting word.",
+  next: b4p30,
+}
+
+var b4p28 = {
+  text: "All in all, he made it work.",
+  next: b4p29,
+}
+
+var b4p27 = {
+  text: "The shirt gave him a feeling of professionalism, while the shorts retained that playful personality I’d seen earlier.",
+  next: b4p28,
+}
+
+var b4p26 = {
+  text: "A deep maroon capulet, falling just under his shoulders, above a white. laced button-up top. His top was tucked into his knee-high pumpkin shorts.",
+  next: b4p27,
+}
+
+var b4p25 = {
+  text: "Maybe it’s because -he- had. I realized once my eyes were able to focus better; he adorned himself in elaborate fabrics which were not a part of his true form.",
+  next: b4p26,
+}
+
+var b4p24 = {
+  text: "I’d mulled over for a while just why I feel like I should have clothing.",
+  next: b4p25,
+}
+
+var b4p23 = {
+  text: "I wish I had any clothes, but shoes would be paramount. It’s not so much cold here. The temperature isn’t much of anything in either direction. It’s just… still.",
+  next: b4p24,
+}
+
+var b4p22 = {
+  text: "I wish I had shoes.",
+  next: b4p23,
+}
+
+var b4p21 = {
+  text: "These streets feel endless. They’re narrow, closed-in, and I feel so alone.<br><br>Their cobblestone composition hurts my feet now.",
+  next: b4p22,
+}
+
+var b4p20 = {
+  text: "It’s been a while now.<br><br>He didn’t try to follow me, and I didn’t try to follow him. At least, I haven’t done it consciously.",
+  next: b4p21,
+}
+
+var b4p19 = {
+  text: ".....",
+  next: b4p20,
+}
+
+var b4p18 = {
+  text: "....",
+  next: b4p19,
+}
+
+var b4p17 = {
+  text: "…",
+  next: b4p18,
+}
+
+var b4p16 = {
+  text: "I continue forward.<br><br>He doesn’t speak.",
+  next: b4p17,
+}
+
+var b4p15 = {
+  text: "I feel awful, feeling his gaze bore into my shrinking form.  <br><br>But I’d decided on this path. I have to take it.",
+  next: b4p16,
+}
+
+var b5p6= {
+  text: "And I’m done with everyone.<br><br>END3 - LONER",
+  next: end,
+}
+
+var b5p5 = {
+  text: "This is no longer those murky depths. I’m whole.",
+  next: b5p6,
+}
+
+var b5p4 = {
+  text: "Until I can be sure of myself, I can’t be sure of this place or anyone in it.",
+  next: b5p5,
+}
+
+var b5p3 = {
+  text: "I’ve had enough of that.",
+  next: b5p4,
+}
+
+var b5p2= {
+  text: "There’s so much about myself that I don’t know yet. Some structure needs to be stuck to.<br><br>Always questioning, questioning, questioning.",
+  next: b5p3,
+}
+
+var b5p1 = {
+  text: "All of these stupid feelings keep coming up and trying to confuse me. I need to be resolute about my decisions.",
+  next: b5p2,
+}
+
+var b4p14 = {
+  text: "I feel…<br><br><span class='game-choice'>‘Bad’<br>‘Nothing’</span>",
+  next: false,
+  choice: {
+    o1: {
+      text: "bad",
+      next: b4p15,
+    },
+    o2: {
+      text: "nothing",
+      next: b5p1,
+    },
+  },
+}
+
+var b4p13 = {
+  text: "‘Do you want to walk there instead?’ His question sounded just as small as I felt.<br><br>My legs begin moving quickly, in a direction away from he and his gaze.",
+  next: b4p14,
+}
+
+var b4p12= {
+  text: "I’m now on the ground, and his touch disappears. I scramble to a less embarrassing pose, standing to retain some shred of dignity.",
+  next: b4p13,
+}
+
+var b4p11 = {
+  text: "He holds firm; only, he begins to lower me to the ground. I’m now painfully aware of just how small and weak I am in comparison, and the assertion of that notion only angers me.",
+  next: b4p12,
+}
+
+var b4p10 = {
+  text: "His grip had loosened, but still remained. I begin to swing my body back and forth, trying to wrestle free.",
+  next: b4p11,
+}
+
+var b4p9 = {
+  text: "‘What…?’<br><br>I just realized that I used actual words, but for some reason, I couldn’t feel too happy about it. ",
+  next: b4p10,
+}
+
+var b4p8 = {
+  text: "It felt heavy and assertive, but sounded shallow and weak. <br><br>The clutch gripping me loosened slightly. ",
+  next: b4p9,
+}
+
+var b4p7 = {
+  text: "Maybe it <i>seemed</i> innocent, but I force the lump in my chest down with a steeled gulp.<br><br>‘Let go.’",
+  next: b4p8,
+}
+
+
+var bf3a6 = {
+  text: "Maybe first impressions can be wrong. And what do I know anyway?<br><br>I refasten my grip.",
+  next: b1p42,
+}
+
+var bf3a5 = {
+  text: "A laugh. His? My own? ‘Now that’s progress.’",
+  next: bf3a6,
+}
+
+var bf3a4 = {
+  text: "He pulls me back up, and resituates me on his shoulders.",
+  next: bf3a5,
+}
+
+var bf3a3 = {
+  text: "Oh. <i>Oh.</i>",
+  next: bf3a4,
+}
+
+var bf3a2 = {
+  text: "A moment’s pause.<br><br>‘Hey, that sounded pretty good.’",
+  next: bf3a3,
+}
+
+var bf3a1 = {
+  text: "‘Yeah,’ I reply with a forced laugh that rings as though hollow. <br><br>‘Sorry about that.’",
+  next: bf3a2,
+}
+
+var b4p6 = {
+  text: "Maybe my initial distrust was unwarranted. What do I say?<br><br><span class='game-choice'>‘Yeah’<br>‘Let go’</span>",
+  next: false,
+  choice: {
+    o1: {
+      text: "yeah",
+      next: bf3a1,
+    },
+    o2: {
+      text: "let go",
+      next: b4p7,
+    },
+  },
+}
+
+var b4p5 = {
+  text: "You scared me,’ he sighed in relief. ‘Are your arms still weak?’<br><br>There’s the slightest twinge in my chest at his innocent question.",
+  next: b4p6,
+}
+
+var b4p4 = {
+  text: "‘Hey!’<br><br>What’s that tone? Confusion? <br><br>My fall is stopped mere centimeters from the ground, and I can only guess that he’s the cause, holding my leg with an iron grip. ",
+  next: b4p5,
+}
+
+var b4p3 = {
+  text: "I shake my head to rid myself of the thoughts. The reasons don’t matter. What matters is that I act on these feelings.<br><br> I released my hold around his neck, letting myself fall backwards.",
+  next: b4p4,
+}
+
+var b4p2 = {
+  text: "Though I’m a bit apprehensive. Why do I feel this way?<br><br> Is it something he did? Or… was it someone else? ",
+  next: b4p3,
+}
+
+var b4p1 = {
+  text: "Why should I trust anyone? I… -I- have this feeling, deep down. <br><br> Nothing good can come of interacting with others. That, if nothing else, I know.",
+  next: b4p2,
+}
 
   var b1p40 = {
-    text: "Do I trust his words?<br><br>‘Trust’<br>‘Distrust’",
+    text: "Do I trust his words?<br><br><span class='game-choice'>‘Trust’<br>‘Distrust’</span>",
     next: false,
     choice: {
       o1: {
@@ -31,7 +409,7 @@ var b1p42 = {
       },
       o2: {
         text: "distrust",
-        next: b1p41,
+        next: b4p1,
       },
     },
   }
@@ -147,7 +525,7 @@ var bf2a1 = {
 }
 
 var bf1a2 = {
-  text: "First, I need a tone.<br><br>What reaction would I like to convey to him?<br><br>'High', to convey happiness<br>'Low', to convey anger<br>'Neutral', to be safe",
+  text: "First, I need a tone.<br><br>What reaction would I like to convey to him?<br><br><span class='game-choice'>'High'</span>, to convey happiness<br><span class='game-choice'>'Low'</span>, to convey anger<br><span class='game-choice'>'Neutral'</span>, to be safe",
   next: false,
   choice: {
     o1: {
@@ -186,7 +564,7 @@ var bf1b1 = {
 }
 
 var b1p19 = {
-  text: "What should I focus on first?<br><br>'Speak'<br>'Move'",
+  text: "What should I focus on first?<br><br><span class='game-choice'>'Speak'<br>'Move'</span>",
   next: false,
   choice: {
     o1: {
@@ -281,7 +659,7 @@ var b3p1 = {
 }
 
   var b1p3 = {
-    text: "Trying proves exceedingly difficult, and I'm starting not to care as much about the result.<br> What should I do?<br><br>'Move'<br>'Give in'",
+    text: "Trying proves exceedingly difficult, and I'm starting not to care as much about the result.<br> What should I do?<br><br><span class='game-choice'>'Move'<br>'Give in'</span>",
     next: false,
     choice: {
       o1: {
@@ -313,7 +691,7 @@ var b3p1 = {
   };
 
   var b1p1 = {
-    text: "Focus… -I- urge to -myself-. Who am… Who are…?<br><br>'I am'<br>'We are'",
+    text: "Focus… -I- urge to -myself-. Who am… Who are…?<br><br><span class='game-choice'>'I am'<br>'We are'</span>",
     next: false,
     choice: {
       o1: {
