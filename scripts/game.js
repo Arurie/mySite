@@ -6,9 +6,104 @@ var end = {
   text: "",
 }
 
-var b1p60 = {
-  text: ".....<br><br>TO BE CONTINUED",
+var b1p79 = {
+  text: "‘Yeesh, man,’ he smiles. ‘Too much more of that and I might not want to actually converse.<br><br>TO BE CONTINUED’",
   next: false,
+}
+
+var b1p78= {
+  text: "‘I was there. I am here! I’m aware,’ I growled.",
+  next: b1p79,
+}
+
+var b1p77 = {
+  text: "‘Well, I forgot we haven’t actually had a conversation yet. You see, first, you were unconscious. Then, you were awake but basically dead, and then, you couldn’t form words very well. And then we were traveling, and then—‘ ",
+  next: b1p78,
+}
+
+var b1p76 = {
+  text: "'Yes?'",
+  next: b1p77,
+}
+
+var b1p75 = {
+  text: "His ears fall for a split second, hopefully from being reprimanded. ‘I just got excited.’",
+  next: b1p76,
+}
+
+var b1p74 = {
+  text: "‘Ahhhhhh!’ I fall back, but am soon stopped by a slender arm, cupping me. I’m annoyed.<br><br>‘Why do you do things like this!?’",
+  next: b1p75,
+}
+
+var b1p73 = {
+  text: "He chuckles. ‘Wait, wait, wait.’ <br><br>I turn towards his voice, and find myself face-to-face with that grin and those piercing, pale green eyes.",
+  next: b1p74,
+}
+
+var b1p72 = {
+  text: "Hate!?<br><br>‘Does everyone here only feel things in extremes!?’",
+  next: b1p73,
+}
+
+var b1p71 = {
+  text: "‘Oh,’ he begins, seemingly not expecting this line of questioning.<br><br>‘Just,’ his volume steadily decreases. ‘Ya know, maybe, hating you. Just a bit.’",
+  next: b1p72,
+}
+
+var b1p70 = {
+  text: "‘Possibility of her… what, exactly?'",
+  next: b1p71,
+}
+
+var b1p69 = {
+  text: "‘It’s not the most likely scenario, but just, ya know. The possibility exists.’",
+  next: b1p70,
+}
+
+var b1p68 = {
+  text: "He turns away, scoffing. ‘Well I’m not psychic!’ He takes a few steps, putting his paws behind his back.",
+  next: b1p69,
+}
+
+var b1p67 = {
+  text: "I turn to look at him, both eyes united in their level of dumbfoundedness.<br><br>‘Probably?’",
+  next: b1p68,
+}
+
+var b1p66 = {
+  text: "And then a full ten seconds later, I hear him tentatively add, '…Probably'.",
+  next: b1p67,
+}
+
+var b1p65 = {
+  text: "‘Take your time, but not too much!’ he grins.<br><br>‘She’ll be excited to meet you.’",
+  next: b1p66,
+}
+
+var b1p64 = {
+  text: "I’m slowly lowered onto the ground, but the action still feels too fast for comfort. I tentatively open one eye, but keep cautiously still for a few moments.",
+  next: b1p65,
+}
+
+var b1p63 = {
+  text: "‘You alright?’ His hands are suddenly under my arms; I know what’s about to come, and close my eyes to brace for the sight.<br><br>As he lifts me, I feel like I return to the sky. He is just too tall.",
+  next: b1p64,
+}
+
+var b1p62 = {
+  text: "I want to <i>die</i>.<br><br>My arms no longer have any strength to speak of, and my stomach has been churned upside-down, right-side-up, and somehow back again.",
+  next: b1p63,
+}
+
+var b1p61 = {
+  text: "‘Okay, we’re here!’ He calls with too much enthusiasm.",
+  next: b1p62,
+}
+
+var b1p60 = {
+  text: ".....",
+  next: b1p61,
 }
 
 var b1p59 = {
@@ -107,13 +202,148 @@ var b1p41 = {
   next: b1p42,
 }
 
-var b4p42 = {
-  text: "Anyone... anyone...<br><br>TO BE CONTINUED",
+var b4p69 = {
+  text: ".....<br><br>TO BE CONTINUED",
   next: false,
 }
 
+var b4p68 = {
+  text: "....",
+  next: b4p69,
+}
+
+var b4p67 = {
+  text: "...",
+  next: b4p68,
+}
+
+var b4p66 = {
+  text: "I turn around…",
+  next: b4p67,
+}
+
+var b4p65 = {
+  text: "Maybe I just want something to happen.<br><br>I just want something to change. This stagnation is so terribly dull… <br><br>Whatever the real reason is, the desired result is the same.",
+  next: b4p66,
+}
+
+var b4p64 = {
+  text: "I sigh at my foolishness. If I longed for others so much, why did I push him away? No, maybe I want something else.",
+  next: b4p65,
+}
+
+var b4p63 = {
+  text: "This entire time, I hadn’t turned once. I’d just taken a straight path. As the tall city skyline is behind me, I feel that the more I continue in this direction, the farther I’ll be from <i>any</i> possibility of <i>anyone</i>.",
+  next: b4p64,
+}
+
+var b4p62 = {
+  text: "I sluggishly pull myself to my feet, and look around.",
+  next: b4p63,
+}
+
+var b4p61 = {
+  text: "Sighing, I realize it doesn’t much matter. Whatever the meaning, I don’t want to become the darkness again.<br><br>Not just yet, anyway.",
+  next: b4p62,
+}
+
+var b4p60 = {
+  text: "I remember that which I saw while I was alive and yet not here; I somehow know it as ‘sleep’.<br><br>Is there a meaning, I wonder. ",
+  next: b4p61,
+}
+
+var b4p59 = {
+  text: "“Ugh, the ground is so uncomfortable to sleep on,” I say to no one.<br><br>...I hope someone hears me.",
+  next: b4p60,
+}
+
+var b4p58 = {
+  text: "I wake up with my body sprawled out over the ground, greeted by my physical weight.",
+  next: b4p59,
+}
+
+var b4p57 = {
+  text: "Did it hurt when I ate them alive?",
+  next: b4p58,
+}
+
+var b4p56 = {
+  text: "As my consciousness fades, I wonder…",
+  next: b4p57,
+}
+
+var b4p55 = {
+  text: "It’s only me.",
+  next: b4p56,
+}
+
+var b4p54 = {
+  text: "I watch—I can’t look away without eyes—as their lines and definition is wiped away, until it’s only the darkness again.",
+  next: b4p55,
+}
+
+var b4p53 = {
+  text: "And then, I see it. They’re being torn open. Their center splits, and inside is the pitch, expanding.<br><br>Where once they had form and definition, they’re not being eaten from the inside out.",
+  next: b4p54,
+}
+
+var b4p52 = {
+  text: "They—it, bends down to inspect the ball. It’s only a silhouette, so I can’t read their features.<br><br>What does it feel when it inspects the ball, this light? As far as I can tell, the ball just becomes a part of them.",
+  next: b4p53,
+}
+
+var b4p51 = {
+  text: "And then more cold lights join it.<br><br>At first, they are everywhere, but they too meld and bend into one shape, until the black gives them an outline. They take on a childlike form, standing on the ground from the start.",
+  next: b4p52,
+}
+
+var b4p50 = {
+  text: "It swirls together until it becomes a small ball, and it falls. I had been unaware of an up and a down; nothing seemed relative before.<br><br>However, it found the <i>ground</i>, and made a sound.",
+  next: b4p51,
+}
+
+var b4p49 = {
+  text: "And then there’s a light which pierces the dark. I don’t feel blinded or burned.<br><br>It’s a cold light; almost blue in its presentation.",
+  next: b4p50,
+}
+
+var b4p48 = {
+  text: "I am the pitch. I am everywhere. Without eyes or form or touch, I <i>am</i>.",
+  next: b4p49,
+}
+
+var b4p47 = {
+  text: " Where do I end and where does that which isn’t me begin?<br><br>I said I was falling backwards, but it felt more like a flip, and I’m swinging around again, dissipating into my surroundings.",
+  next: b4p48,
+}
+
+var b4p46 = {
+  text: "It’s dark again, and I feel disconnected from my physical weight.<br><br>I’m floating, falling slowly backwards in weightlessness",
+  next: b4p47,
+}
+
+var b4p45 = {
+  text: ".....",
+  next: b4p46,
+}
+
+var b4p44 = {
+  text: "....",
+  next: b4p45,
+}
+
+var b4p43 = {
+  text: "...",
+  next: b4p44,
+}
+
+var b4p42 = {
+  text: "Anyone... anyone...",
+  next: b4p43,
+}
+
 var b4p41 = {
-  text: "The cold from the worn-down building at my back creeps down my back, and I want to scream.",
+  text: "The cold from the worn-down building at my back creeps from my skin to my core, and I force down my desire to scream.",
   next: b4p42,
 }
 
@@ -123,12 +353,12 @@ var b4p40 = {
 }
 
 var b4p39 = {
-  text: "What I perceive as my heart, sinks. What if there is no rhyme or reason to this existence?",
+  text: "What I perceive as my heart sinks. What if there is no rhyme or reason to this existence?",
   next: b4p40,
 }
 
 var b4p38 = {
-  text: "Do I have a purpose in being here, something I was made to do? ",
+  text: "Do I have a purpose in being here; something I was made to do? ",
   next: b4p39,
 }
 
@@ -138,7 +368,7 @@ var b4p37 = {
 }
 
 var b4p36 = {
-  text: "I close my eyes. Just how much longer do I think I can run away from things?",
+  text: "I close my eyes.<br><br>Just how much longer do I think I can run away from things?",
   next: b4p37,
 }
 
@@ -148,13 +378,13 @@ var b4p35 = {
 }
 
 var b4p34 = {
-  text: "I suppose that’s the city center, and it expanded out here.",
+  text: "I suppose that’s the city center, and this area is its expansion.",
   next: b4p35,
 }
 
 
 var b4p33 = {
-  text: "The buildings in the immediate vicinity are primarily all one floor, with a few being two. I catch glimpses of a faraway skyline, reaching untold heights, but this area is relatively flat in comparison.",
+  text: "The buildings in the immediate vicinity are primarily all one floor, with a few being two. I catch a glimpse of a far-off skyline, reaching untold heights, but this area is relatively flat in comparison.",
   next: b4p34,
 }
 
@@ -169,7 +399,7 @@ var b4p31 = {
 }
 
 var b4p30 = {
-  text: "Would clothes work for me? I am not slender and tall; regal and lithe. I’m just… this.",
+  text: "Would clothes work for me? I am not slender and tall; regal and lithe.<br><br>I’m just… this.",
   next: b4p31,
 }
 
@@ -184,17 +414,17 @@ var b4p28 = {
 }
 
 var b4p27 = {
-  text: "The shirt gave him a feeling of professionalism, while the shorts retained that playful personality I’d seen earlier.",
+  text: "The shirt gave him a look of regality, while the shorts retained that playful personality I’d seen earlier.",
   next: b4p28,
 }
 
 var b4p26 = {
-  text: "A deep maroon capulet, falling just under his shoulders, above a white. laced button-up top. His top was tucked into his knee-high pumpkin shorts.",
+  text: "A deep maroon capulet, falling just below his shoulders, above a white, laced button-up top, tucked into his knee-high pumpkin shorts.",
   next: b4p27,
 }
 
 var b4p25 = {
-  text: "Maybe it’s because -he- had. I realized once my eyes were able to focus better; he adorned himself in elaborate fabrics which were not a part of his true form.",
+  text: "Maybe it’s because <i>he</i> had. I realized once my eyes were able to focus better; he adorned himself in elaborate fabrics which were not a part of his true form.",
   next: b4p26,
 }
 
@@ -214,7 +444,7 @@ var b4p22 = {
 }
 
 var b4p21 = {
-  text: "These streets feel endless. They’re narrow, closed-in, and I feel so alone.<br><br>Their cobblestone composition hurts my feet now.",
+  text: "I've gotten the hang of walking, at least.<br><br>But these streets feel endless. They’re narrow, closed-in, and I feel so alone.<br><br>Their cobblestone composition makes my feet ache.",
   next: b4p22,
 }
 
@@ -239,7 +469,7 @@ var b4p17 = {
 }
 
 var b4p16 = {
-  text: "I continue forward.<br><br>He doesn’t speak.",
+  text: "I continue forward, strumbling every few steps, but I refuse to stop.<br><br>He doesn’t speak.",
   next: b4p17,
 }
 
@@ -294,12 +524,12 @@ var b4p14 = {
 }
 
 var b4p13 = {
-  text: "‘Do you want to walk there instead?’ His question sounded just as small as I felt.<br><br>My legs begin moving quickly, in a direction away from he and his gaze.",
+  text: "‘Did you want to try and walk there, after all?’ His question sounded just as small as I felt.<br><br>My legs begin moving quickly, in a direction away from he and his gaze.",
   next: b4p14,
 }
 
 var b4p12= {
-  text: "I’m now on the ground, and his touch disappears. I scramble to a less embarrassing pose, standing to retain some shred of dignity.",
+  text: "I’m now on the ground, and his touch disappears. I scramble to a less embarrassing pose, standing to retain some shred of dignity.<br><br>It isn't too terribly effective, as my legs are shaken by inner trembles.",
   next: b4p13,
 }
 
@@ -728,7 +958,7 @@ var b3p1 = {
     //$("#game-text").scrollTop($("#game-text")[0].scrollHeight);
     //alert($('#game-text').scrollHeight);
     if (gameState.choice) {
-      $('#game-input').attr("placeholder", "Enter your choice");
+      $('#game-input').attr("placeholder", "Type one of the above options");
     }
     else if (gameState.next!==end){
       $('#game-input').attr("placeholder", "Press enter to continue");
